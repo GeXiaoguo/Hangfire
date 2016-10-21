@@ -16,13 +16,13 @@ Hangfire allows jobs to be defined as lambda expressions and thos lambda express
 
 ### 1. HangfireClient  
   *  Add hangfire job definitions to Hangfire Storage. The job definitions are collected from the other project below  
-     #### a)  SydneyWeatherSnapShots  
+####     a)  SydneyWeatherSnapShots  
            Job implemented as static method in class library  
            Job definitions are hard coded in C#  
-     #### b)  SydneyWeatherSnapshotsConsole  
+####     b)  SydneyWeatherSnapshotsConsole  
            Job is implemented as a console exe.   
            Job definitions are in default.conf and loaded by JsonConfig   
-     #### c)  PluginJobs  
+####     c)  PluginJobs  
            Job is implemented as a MEF plugin  
            The plugin is loaded by MEFPluginJobAdaptor  
            
