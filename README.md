@@ -1,4 +1,4 @@
-# Hangfire dome and patterns  
+# Hangfire demo and patterns  
 Hangfire allows jobs to be defined as lambda expressions and thos lambda expressions are serialized as json string and saved in a database. Later on, those json string can be retrieve from the database, deserialized, compiled, and executed. This has the limitation that jobs can only defined in C# and any now job definition needs code change, rebuild and redeploy. This project provides several options to workaround this limitation. Two options are demoastrated  
 ###  1. Implement jobs as MEF plugins.  
      Job definition can be done by simply copyingthe plugin to the deployment folder  
